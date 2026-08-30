@@ -1,0 +1,17 @@
+#복습
+
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+from 싸이킷런호출 import 트레인셋나누는것을해야함
+
+변수나열 = 트레인셋나열(
+  x,y
+  테스트사이즈 = ?
+  비율 정하는거 = 
+  랜덤스테이트 = 
+
+프린트(f"트레인 {트레인변수.쉐이프[숫자]} 글씀")
+프린트("위랑 동일한데 테스트임")
+
+
+ 
