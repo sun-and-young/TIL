@@ -9,31 +9,14 @@ autograd , 계산그래프 , 자동미분?
 https://tutorials.pytorch.kr/beginner/blitz/autograd_tutorial.html 
 https://tutorials.pytorch.kr/beginner/basics/autogradqs_tutorial.html 
 
-forward,backward
-scquare
-의존경로
-경로기록요청의 예? 
+forward,backward>>
+square>>
+의존경로: “어떤 값이 다른 값을 계산하는 데 영향을 주는 연결 관계”
+경로기록요청의 예? >>
 
 딥러닝에서 기울기의 역할, 기울기란?
-
 “현재 모델의 가중치를 어느 방향으로 얼마나 바꾸면 손실(loss)을 줄일 수 있는가?”를 알려주는 값입니다.
-
-1. 기울기란?
-먼저 아주 간단한 함수로 생각해볼게요.
-
-y
-=
-f
-(
-x
-)
-
-어떤 지점에서 **기울기(slope)**는 
-x
-가 조금 변했을 때 
-y
-가 얼마나 변하는지를 나타냅니다.
-
+ 
 3. 왜 기울기가 필요한가?
 딥러닝의 목표는 손실을 최소화하는 것입니다. 
 기울기
