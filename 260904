@@ -9,7 +9,9 @@ autograd , 계산그래프 , 자동미분?
 https://tutorials.pytorch.kr/beginner/blitz/autograd_tutorial.html 
 https://tutorials.pytorch.kr/beginner/basics/autogradqs_tutorial.html 
 
-forward,backward>>
+forward,backward
+ forward: 입력 데이터를 받아 예측값을 계산하는 순전파 과정 
+ backward: 손실(loss)에 대한 기울기(gradient)를 계산하는 역전파 과정 
 square>>
 의존경로: “어떤 값이 다른 값을 계산하는 데 영향을 주는 연결 관계”
 경로기록요청의 예? >>
