@@ -1,0 +1,6 @@
+파이토치에서 이미 생성된 텐서의 데이터 타입(dtype)을 바꾸려면 .to() 메서드나 .type() 메서드, 혹은 단축 메서드를 사용할 수 있습니다. [1] (https://booiljung.gitbook.io/booil-jung/docs/artificial_intelligent/introductions_to_pytorch/chapter_02/0202), [2] (https://ds31x.tistory.com/215)주요 변경 방법.to() 메서드 사용: tensor.to(desired_dtype) : torch의 tensor 인스턴스의 method to 를 사용. 가장 권장되는 방식이며 장치(CPU/GPU) 이동과 동시에 처리할 수 있습니다.pythontensor = tensor.to(torch.float32)
+Use code with caution..type() 메서드 사용: 텐서.type(변환을 원하는 자료형) 형태로 작성해주시면 완료됩니다.pythontensor = tensor.type(torch.FloatTensor)
+Use code with caution.단축 메서드 사용: tensor.float(), tensor.int() 와 같은 단축메서드도 지원. 코드가 간결해져 자주 쓰입니다.pythontensor = tensor.float() # torch.float32로 변환
+tensor = tensor.long()  # torch.int64로 변환
+tensor = tensor.double() # torch.float64로 변환
+Use code with caution.
